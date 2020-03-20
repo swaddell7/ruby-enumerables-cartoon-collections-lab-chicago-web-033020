@@ -15,5 +15,8 @@ def find_the_cheese(array)
   #if the array includes cheese types (this condition returns true)
     #then return the first string that is a type of cheese
   #otherwise return nil 
-  
+  if !(array & cheeses).empty?
+    (array & cheeses)[0]
+  end
+  nil
 end

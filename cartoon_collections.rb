@@ -17,6 +17,7 @@ def find_the_cheese(array)
   #otherwise return nil 
   if !(array & cheese_types).empty?
     (array & cheese_types)[0]
+  else
+    nil
   end
-  nil
 end
